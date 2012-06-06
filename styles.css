@@ -372,6 +372,10 @@ li {
   margin: 0;
   margin-bottom: .5em;
 }
+ul.small li {
+  font-size: 25px;
+  line-height: 40px;
+}
 ul li::before {
   content: '·';
   width: .75em;
@@ -457,6 +461,8 @@ article.fill img {
 article.full img {
   max-width: 900px;
   max-height: 700px;
+  margin: 0 auto;
+  display: block;
 }
 
 img.centered {
@@ -609,13 +615,15 @@ img.small{
 }
 img.large{
   display: block;
-  height: 540px;
-  margin: 40px auto 0;
+  margin: 0 auto;
+  max-width: 778px;
+  max-height: 542px;
 }
 img.xlarge{
   display: block;
-  height: 600px;
   margin: 0 auto;
+  max-width: 778px;
+  max-height: 618px;
 }
 address{
   font-style:normal;
