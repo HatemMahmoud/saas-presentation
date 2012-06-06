@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<!--
+  Google HTML5 slide template
+
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+           
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/html5slides/
+-->
+<html>
+  <head>
+    <title>Software Engineering for Software as a Service</title>
+    <meta charset='utf-8'>
+    <script src='slides.js'></script>
+  </head>
+  <style>
+    /* Your individual styles here, or just use inline styles if that’s
+       what you want. */
+  </style>
+  <body style='display: none'>
+    <section class='slides layout-regular template-default'>
+      <article>
+        <h1>Software Engineering for Software as a Service</h1>
+        <address>
+          <div class="author_name">Hatem Mahmoud</div>
+          <div>ExpressionLab.com</div>
+        </address>
+      </article>
+
+      <article class="full">
+        <img src="images/course.png" />
+      </article>
+      
+      <article>
+        <h3>Agenda</h3>
+        <ul>
+          <li>MOOCs</li>
+          <li>Examples</li>
+          <li>Software Engineering for SaaS</li>
+          <li>Summary</li>
+        </ul>
+      </article>
+      
+      <article>
+        <h1>MOOCs</h1>
+      </article>
+      
+      <article>
+        <h3>Online Education</h3>
+        <p>Obtaining or developing knowledge, behaviors or skills in a learning environment on the Internet</p>
+      </article>
+      
+      <article>
+        <h3>Stage 1</h3>
+        <p>Lecturer places notes and presentations into an online repository or file server with a shared drive</p>
+      </article>
+      
+      <article>
+        <h3>Stage 2</h3>
+        <p>Using an LMS (Learning Management System) for administration, tracking, and reporting</p>
+      </article>
+      
+      <article>
+        <h3>Stage 3</h3>
+        <p>Using an LMS that encourages online interaction through chat rooms, discussion forums, wikis, etc.</p>
+      </article>
+
+      <article class="full">
+        <img src="images/ocw.png" />
+      </article>
+
+      <article class="full">
+        <img src="images/khanacademy.png" />
+      </article>
+
+      <article>
+        <img src="images/history.png" class="xlarge" />
+      </article>
+      
+      <article>
+        <h3>Stage 4</h3>
+        <p>MOOC (Massive Open Online Course): a new way of learning in a networked world, based on the<br />
+        <em>Theory of Connectivism</em></p>
+      </article>
+      
+      <article>
+        <h3>Principles of Connectivism</h3>
+        <ul class="build">
+          <li>Learning is a process of connecting information sources</li>
+          <li>The ability to see connections between fields, ideas, and concepts is a core skill</li>
+        </ul>
+      </article>
+      
+      <article>
+        <h3>Principles of Connectivism</h3>
+        <ul class="build">
+          <li>Knowing where to find information is more important than knowing information</li>
+          <li>Learning happens in different ways: courses, communities, conversations, web search, email lists, blogs, etc.</li>
+        </ul>
+      </article>
+      
+      <article>
+        <h3>Principles of Connectivism</h3>
+        <ul class="build">
+          <li>Choosing what to learn is itself a learning process</li>
+          <li>Learning is a knowledge creation process, not only knowledge consumption</li>
+        </ul>
+      </article>
+      
+      <article>
+        <h3>Principles of MOOCs</h3>
+        <p>1. Content is not prepared ahead of time, but is an <em>aggregation</em> of a massive amount of content produced in different places</p>
+      </article>
+      
+      <article>
+        <h3>Principles of MOOCs</h3>
+        <p>2. <em>Remixing</em> materials created within the course with each other and with materials elsewhere</p>
+      </article>
+      
+      <article>
+        <h3>Principles of MOOCs</h3>
+        <p>3. <em>Re-purposing</em> of aggregated and remixed materials to suit goals of each participant</p>
+      </article>
+      
+      <article>
+        <h3>Principles of MOOCs</h3>
+        <p>4. <em>Feeding forward</em> by sharing re-purposed ideas and content with other participants and the rest of the world</p>
+      </article>
+      
+      <article>
+        <h3>MOOCs - Some Analogies</h3>
+        <ul class="build">
+          <li>There are more football games in the world than you could possibly watch</li>
+          <li>There are more food recipes in the world than you could experience in a lifetime</li>
+        </ul>
+      </article>
+      
+      <article>
+        <h3>Benefits of MOOCs</h3>
+        <ul class="build">
+          <li>Free for all who are interested</li>
+          <li>Learning occurs in an informal manner rather than in a classroom</li>
+          <li>All work, thoughts and instruction can be shared by all participants</li>
+        </ul>
+      </article>
+      
+      <article>
+        <h3>Benefits of MOOCs</h3>
+        <ul class="build">
+          <li>You choose what you do</li>
+          <li>You choose how to participate</li>
+          <li>You decide if you have been successful</li>
+        </ul>
+      </article>
+      
+      <article>
+        <h1>Examples</h1>
+      </article>
+
+      <article class="full">
+        <img src="images/mooc.ca.png" />
+      </article>
+
+      <article class="full">
+        <img src="images/udacity.png" />
+      </article>
+
+      <article class="full">
+        <img src="images/edx.png" />
+      </article>
+
+      <article class="full">
+        <img src="images/uopeople.png" />
+      </article>
+
+      <article class="full">
+        <img src="images/udemy.png" />
+      </article>
+
+      <article class="full">
+        <img src="images/coursera.png" />
+      </article>
+      
+      <article>
+        <h1>Software Engineering for Software as a Service</h1>
+      </article>
+      
+      <article>
+        <h3>Course Outline</h3>
+        <ul>
+          <li>Overview</li>
+          <li>Engineering Software</li>
+          <li>SaaS Architecture</li>
+          <li>Ruby and Rails Basics</li>
+          <li>Behavior Driven Development</li>
+          <li>Test Driven Development</li>
+        </ul>
+      </article>
+      
+      <article>
+        <h1>Overview</h1>
+      </article>
+
+      <article class="full">
+        <img src="images/course-home.png" />
+      </article>
+
+      <article>
+        <img src="images/course-book-cover.png" class="xlarge" />
+      </article>
+
+      <article class="full">
+        <img src="images/course-book.png" />
+      </article>
+
+      <article class="full">
+        <img src="images/course-outline.png" />
+      </article>
+
+      <article class="full">
+        <img src="images/course-lectures.png" />
+      </article>
+
+      <article class="full">
+        <img src="images/course-lecture.png" />
+      </article>
+
+      <article class="full">
+        <img src="images/course-forums.png" />
+      </article>
+
+      <article class="full">
+        <img src="images/course-quizes.png" />
+      </article>
+
+      <article class="full">
+        <img src="images/course-quiz.png" />
+      </article>
+
+      <article class="full">
+        <img src="images/course-assignments.png" />
+      </article>
+
+      <article class="full">
+        <img src="images/course-assignment.png" />
+      </article>
+      
+      <article>
+        <h1>Engineering Software</h1>
+      </article>
+      
+      <article>
+        <h3>Engineering Software vs Hardware</h3>
+        <q style="margin: 90px 25px">If builders built buildings the way programmers wrote programs, then the first woodpecker that came along would destroy civilization.</q>
+        <div class="author">Weinberg's Second Law</div>
+      </article>
+      
+      <article>
+        <h3>Ariane 5 Rocket Explosion, 1996</h3>
+        <p>Failed to achieve orbit due to an unhandled integer overflow exception!</p>
+      </article>
+      
+      <article>
+        <h3>Mars Climate Orbiter Crash, 1999</h3>
+        <p>Lost in space due to lack of conversion from English to metric units!</p>
+      </article>
+      
+      <article>
+        <h3>Engineering Software vs Hardware</h3>
+        <p>Why hasn’t software engineering been as successful as hardware engineering?</p>
+      </article>
+      
+      <article>
+        <h3>Engineering Software vs Hardware</h3>
+        <ol>
+          <li>Product Lifetimes</li>
+          <li>Development Processes</li>
+          <li>Assurance</li>
+          <li>Productivity</li>
+        </ol>
+      </article>
+      
+      <article>
+        <h3>Product Lifetimes</h3>
+        <p>Unlike hardware, software is expected to grow and evolve over time</p>
+      </article>
+      
+      <article>
+        <h3>Product Lifetimes</h3>
+        <p>Customers are considerably more forgiving for software</p>
+      </article>
+      
+      <article>
+        <h3>Product Lifetimes</h3>
+        <p><em>Legacy Code</em><br />Software that, despite its old age, continues to be used because it meets customers’ needs</p>
+      </article>
+      
+      <article>
+        <h3>Product Lifetimes</h3>
+        <p>60% of software maintenance costs are for adding new functionality to legacy software. It's successful!</p>
+      </article>
+      
+      <article>
+        <h3>Product Lifetimes</h3>
+        <p><em>Beautiful Code</em><br />Long-lasting code that is easy to evolve</p>
+      </article>
+      
+      <article>
+        <h3>Product Lifetimes</h3>
+        <p><em>Unexpectedly Short-lived Code</em><br />Discarded because it doesn’t meet customers’ needs. Worst case!</p>
+      </article>
+      
+      <article>
+        <h3>Development Processes</h3>
+        <p>
+          Software processes initially followed hardware processes.<br />
+          <em>Measure twice, cut once!</em>
+        </p>
+      </article>
+      
+      <article>
+        <h3>Development Processes</h3>
+        <p><em>Waterfall</em><br />A sequential process through phases of analysis, design, implementation, testing and maintenance</p>
+        <p></p>
+      </article>
+      
+      <article>
+        <h3>Development Processes</h3>
+        <p>The Waterfall model can work well with well-defined tasks, but it runs into trouble when customers are unclear</p>
+      </article>
+      
+      <article>
+        <h3>Development Processes</h3>
+        <p>A variety of development lifecycles were developed over the years to better match the nature of software</p>
+      </article>
+      
+      <article>
+        <h3>Development Processes</h3>
+        <p>In February 2001,<br />17 software developers met to find a common ground for lightweight development methods</p>
+      </article>
+
+      <article class="full">
+        <img src="images/agile-manifesto.png" />
+      </article>
+      
+      <article>
+        <h3>Assurance</h3>
+        <p><em>Verification</em><br />Did you build the thing right?</p>
+      </article>
+      
+      <article>
+        <h3>Assurance</h3>
+        <p><em>Validation</em><br />Did you build the right thing?</p>
+      </article>
+      
+      <article>
+        <h3>Assurance</h3>
+        <q>It’s just what we asked for, but<br />not what we want!</q>
+        <div class="author">Customer</div>
+      </article>
+      
+      <article>
+        <h3>Assurance Approaches</h3>
+        <ol>
+          <li>Testing</li>
+          <li>Formal Methods</li>
+        </ol>
+      </article>
+      
+      <article>
+        <h3>Assurance - Testing</h3>
+        <p>Exhaustive testing is infeasible!<br/>
+        Solution: <em>Divide and Conquer</em></p>
+      </article>
+      
+      <article>
+        <h3>Assurance - Testing</h3>
+        <p><em>1. Unit Testing</em><br />Makes sure that a single procedure or method does what was expected.</p>
+      </article>
+      
+      <article>
+        <h3>Assurance - Testing</h3>
+        <p><em>2. Module Testing</em><br />Tests across individual units.</p>
+      </article>
+      
+      <article>
+        <h3>Assurance - Testing</h3>
+        <p><em>3. Integration Testing</em><br />Ensures that the interfaces between units have consistent assumptions and communicate correctly.</p>
+      </article>
+      
+      <article>
+        <h3>Assurance - Testing</h3>
+        <p><em>4. Acceptance Testing</em><br />Ensures that the integrated program meets its requirements.</p>
+      </article>
+      
+      <article>
+        <h3>Assurance - Testing</h3>
+        <p><em>Test Coverage</em><br />Shows what fraction of the paths is covered by the tests.</p>
+      </article>
+      
+      <article>
+        <h3>Assurance - Testing</h3>
+        <p><em>Regression Testing</em><br />Automatically rerun old tests so changes don’t break what used to work.</p>
+      </article>
+      
+      <article>
+        <h3>Assurance - Testing</h3>
+        <p><em>Continuous Integration</em><br />The program is tested as the code is developed, not in a separate phase.</p>
+      </article>
+      
+      <article>
+        <h3>Assurance - Testing</h3>
+        <q>Program testing can be used to show the presence of bugs, but never to show their absence!</q>
+        <div class="author">Edsger W. Dijkstra</div>
+      </article>
+      
+      <article>
+        <h3>Assurance - Formal Methods</h3>
+        <p>Mathematical proofs to ensure that the behavior of the code follows the behavior of the specification.</p>
+      </article>
+      
+      <article>
+        <h3>Assurance - Formal Methods</h3>
+        <p>Used only when the cost to repair errors is very high, the features are very hard to test, and the item being verified is not too large.</p>
+      </article>
+      
+      <article>
+        <h3>Assurance - Formal Methods</h3>
+        <p>Examples include vital parts of hardware (like network protocols) and safety critical software systems (like medical equipment).</p>
+      </article>
+      
+      <article>
+        <h3>Productivity</h3>
+        <ol>
+          <li>Conciseness</li>
+          <li>Synthesis</li>
+          <li>Reuse</li>
+          <li>Tools</li>
+        </ol>
+      </article>
+      
+      <article>
+        <h3>Productivity</h3>
+        <p><em>1. Conciseness</em><br />Easy-to-understand programs have fewer bugs and are easier to evolve.<br />
+        e.g. short syntax, reflection.
+        </p>
+      </article>
+      
+      <article>
+        <h3>Productivity</h3>
+        <p><em>2. Synthesis</em><br />Automatic code generation.<br />
+        e.g. metaprogramming.</p>
+      </article>
+      
+      <article>
+        <h3>Productivity</h3>
+        <p><em>3. Reuse</em><br />Reuse old code rather than write everything from scratch.<br />
+        e.g. object oriented programming.</p>
+      </article>
+      
+      <article>
+        <h3>Productivity</h3>
+        <p><em>4. Tools</em><br />Replace tedious manual tasks.<br />
+        e.g. RSpec, Pivotal Tracker.</p>
+      </article>
+      
+      <article>
+        <h1>Summary</h1>
+      </article>
+
+      <article>
+        <img src="images/stats.png" class="xlarge" />
+      </article>
+
+      <article>
+        <img src="images/demographics.png" class="xlarge" />
+      </article>
+
+      <article class="full">
+        <img src="images/coursera-fund.png" />
+      </article>
+
+      <article>
+        <img src="images/course-logo.jpg" class="xlarge" />
+      </article>
+      
+      <article>
+        <h1>Resources</h1>
+      </article>
+
+      <article class="full">
+        <img src="images/what-is-a-mooc.png" />
+      </article>
+      
+      <article>
+        <h1>Thank You!</h1>
+        <address>
+          <div class="author_name">Hatem Mahmoud</div>
+          <div>ExpressionLab.com</div>
+        </address>
+      </article>
+    </section>
+  </body>
+</html>
